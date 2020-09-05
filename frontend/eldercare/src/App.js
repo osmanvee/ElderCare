@@ -7,7 +7,7 @@ import patientLogin from './components/patientLogin.js';
 import Home from './components/Home.js';
 import caretaker from './components/caretaker.js';
 import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
