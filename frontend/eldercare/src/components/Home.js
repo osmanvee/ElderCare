@@ -8,7 +8,7 @@ function Home() {
 
     return(
         <div>
-            <h1>Please Login</h1>
+            <h1>Medhack 2020</h1>
         </div>
     );
 }
