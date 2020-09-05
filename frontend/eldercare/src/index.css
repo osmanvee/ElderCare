@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.head {
+  width: 100%;
+  background: orangered;
+  height: 100%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.topnav {
+padding: 10px;
+}
+
+#patientButton {
+
+}

@@ -1,24 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './images/logo.png';
 import './App.css';
+import './index.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import patientLogin from './components/patientLogin.js';
+import Home from './components/Home.js';
+import caretaker from './components/caretaker.js';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="head">
+        <div className="logo">
+        <img src={logo} alt="elderCare" />
+        </div>
+        Remote treatment for elderly patients!
+      </div>
+
+      <div className="topnav">
+        
+        <Link to="/patient">
+        <Button variant="primary">Login as Patient</Button>{' '}
+           </Link>
+     
+       
+        <Link to="/caretaker">
+        <Button variant="primary">Login as Caretaker</Button>{' '}
+
+        </Link>
+       
+        
+      
+        </div>
+
+      <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/patient" component={patientLogin} />
+          <Route path="/caretaker" component={caretaker} />
+       
+        </Switch>
     </div>
   );
 }
