@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, InputGroup, FormControl, Card, Accordion, Form } from 'react-bootstrap';
+import { Button, InputGroup, FormControl, Card, Accordion, Form, Table } from 'react-bootstrap';
 import '../App.css';
 import '../index.css';
 import nurse from '../images/2n.jpg';
@@ -184,6 +184,37 @@ class patientLogin extends React.Component{
                         </Card>
                         </span>
                         </div>
+                        <h1>Your Doctor Appointments</h1>
+                        <Table striped bordered hover size="sm">
+                            <thead>
+                                <tr>
+                                <th>#</th>
+                                <th>Doctor Name</th>
+                                <th>Attented (Y/N)</th>
+                                <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>1</td>
+                                <td>Dr. Mark Otto</td>
+                                <td>N</td>
+                                <td>December 6</td>
+                                </tr>
+                                <tr>
+                                <td>2</td>
+                                <td>Dr. Osman Warsi</td>
+                                <td>N</td>
+                                <td>November 15</td>
+                                </tr>
+                                <tr>
+                                <td>3</td>
+                                <td colSpan="2">Dr. Mark Otto: You Attended, Good job!</td>
+                                <td>July 15</td>
+                                </tr>
+                            </tbody>
+                            </Table>
+
                     </div>
                     
         } else {
