@@ -184,7 +184,7 @@ class patientLogin extends React.Component{
                         </Card>
                         </span>
                         </div>
-                        <h1>Your Doctor Appointments</h1>
+        <h3>{this.input.value}, these are your doctor appintments!</h3>
                         <Table striped bordered hover size="sm">
                             <thead>
                                 <tr>
