@@ -4,6 +4,9 @@ import '../App.css';
 import '../index.css';
 import nurse from '../images/2n.jpg';
 import sleep from '../images/sleep.png';
+import tired from '../images/tired1.png';
+import med from '../images/med1.png';
+import food from '../images/food.png';
 
 class patientLogin extends React.Component{
 
@@ -55,7 +58,9 @@ class patientLogin extends React.Component{
                                         <Form.Control type="range" />
                                         
                                     </Form.Group>
-                                    <button>Submit</button>
+                                    <Button variant="primary" size="lg" disabled>
+                                            Submit
+                                        </Button>{' '}
                                 </Form>
                                 
                                 </Card.Text>
@@ -112,38 +117,69 @@ class patientLogin extends React.Component{
 
                         <span id="card1">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={nurse} />
+                            <Card.Img variant="top" src={tired} />
                             <Card.Body>
-                                <Card.Title>Welcome {this.input.value}!</Card.Title>
+                                <Card.Title>  {this.input.value}, Did you find any task slightly more difficult than usual? </Card.Title>
                                 <Card.Text>
-                                Today is {date}. We hope you're having a good day!
+                                <p>e.g: Walking to the loo, finding groceries, operating TV? </p>
+                                <Form >
+                                    <div> 
+                                    <Button variant="success" size="lg" disabled>
+                                            Yes
+                                        </Button>{' '}
+                                        <Button variant="danger" size="lg" disabled>
+                                            No
+                                        </Button>{' '}
+                                        </div>
+                                </Form>
+                                
                                 </Card.Text>
-                            
+                               
                             </Card.Body>
                         </Card>
                         </span>
 
                         <span id="card1">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={nurse} />
+                            <Card.Img variant="top" src={med} />
                             <Card.Body>
-                                <Card.Title>Welcome {this.input.value}!</Card.Title>
+                                <Card.Title>  {this.input.value}, Did you take all your medications today? </Card.Title>
                                 <Card.Text>
-                                Today is {date}. We hope you're having a good day!
+                                <p>Medicine 1, 2, 3</p>
+                                <Form >
+                                    <div> 
+                                    <Button variant="success" size="lg" disabled>
+                                            Yes
+                                        </Button>{' '}
+                                        <Button variant="danger" size="lg" disabled>
+                                            No
+                                        </Button>{' '}
+                                        </div>
+                                </Form>
+                                
                                 </Card.Text>
-                            
+                               
                             </Card.Body>
                         </Card>
                         </span>
                         <span id="card1">
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={nurse} />
+                            <Card.Img variant="top" src={food} />
                             <Card.Body>
-                                <Card.Title>Welcome {this.input.value}!</Card.Title>
+                                <Card.Title>  What did you eat today? </Card.Title>
                                 <Card.Text>
-                                Today is {date}. We hope you're having a good day!
+                                
+                                <Form >
+                                   <input type="text" />
+                                    <Button variant="success" size="lg" disabled>
+                                            Submit
+                                        </Button>{' '}
+                    
+                                        
+                                </Form>
+                                
                                 </Card.Text>
-                            
+                               
                             </Card.Body>
                         </Card>
                         </span>
