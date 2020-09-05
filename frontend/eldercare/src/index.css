@@ -36,8 +36,15 @@ padding: 10px;
 
 .bodyy{
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #patientButton {
 
+}
+
+#card1{
+  padding: 10px;
 }
