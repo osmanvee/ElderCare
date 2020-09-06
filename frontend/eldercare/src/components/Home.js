@@ -11,7 +11,7 @@ function Home() {
             <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={nurse} />
                             <Card.Body>
-                                <Card.Title> <h4> elderCare provides remote treatment for elderly patients</h4> </Card.Title>
+                                <Card.Title> <h4> elderCare provides synchronous remote monitoring and mental health combined services for the elderly!</h4> </Card.Title>
                                 <Card.Text>
                                
                                 </Card.Text>
