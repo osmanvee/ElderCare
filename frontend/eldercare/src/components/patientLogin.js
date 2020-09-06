@@ -226,8 +226,10 @@ class patientLogin extends React.Component{
                         type="text"
                         ref={(input) => this.input = input}
                     />
-                    
-                    <input className="input2" type="submit" value="Sign up" />
+                      <input 
+                    type="password"
+                    />
+                    <input className="input2" type="submit" value="Login" />
           
                 </form>
             </div>
