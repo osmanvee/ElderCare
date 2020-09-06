@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, InputGroup, FormControl, Card, Accordion, Form, Table } from 'react-bootstrap';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import '../App.css';
 import '../index.css';
 import nurse from '../images/2n.jpg';
@@ -214,7 +215,9 @@ class patientLogin extends React.Component{
                                 </tr>
                             </tbody>
                             </Table>
-
+                            <Link to="/">
+                                <Button variant="danger">Go to Home</Button>{' '}
+                            </Link>
                     </div>
                     
         } else {
@@ -224,14 +227,17 @@ class patientLogin extends React.Component{
                     <label htmlFor="favcolor"> </label>
                     <input
                         type="text"
+                        placeholder="username"
                         ref={(input) => this.input = input}
                     />
                       <input 
                     type="password"
+                    placeholder="password"
                     />
                     <input className="input2" type="submit" value="Login" />
           
                 </form>
+
             </div>
         }
       return (
